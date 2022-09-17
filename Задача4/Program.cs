@@ -5,7 +5,6 @@
 //22 3 9 -> 22
 
 Console.Clear();
-
 Console.Write("Введите первое число: ");
 int number1 = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
