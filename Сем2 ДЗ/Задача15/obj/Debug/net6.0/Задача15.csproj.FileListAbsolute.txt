@@ -1,0 +1,15 @@
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\bin\Debug\net6.0\Задача15.exe
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\bin\Debug\net6.0\Задача15.deps.json
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\bin\Debug\net6.0\Задача15.runtimeconfig.json
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\bin\Debug\net6.0\Задача15.dll
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\bin\Debug\net6.0\Задача15.pdb
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.csproj.AssemblyReference.cache
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.AssemblyInfoInputs.cache
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.AssemblyInfo.cs
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.csproj.CoreCompileInputs.cache
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.dll
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\refint\Задача15.dll
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.pdb
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\Задача15.genruntimeconfig.cache
+C:\Users\id1119\Desktop\SemC#\Сем2 ДЗ\Задача15\obj\Debug\net6.0\ref\Задача15.dll
