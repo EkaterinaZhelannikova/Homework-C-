@@ -20,3 +20,9 @@ if(N <= 0)
 {
     Console.WriteLine("Число не соответствует условию задачи");
 }
+
+//while (n > count)
+//{
+//    Console.Write($"{count} ");
+//    count += 2;    
+//}
