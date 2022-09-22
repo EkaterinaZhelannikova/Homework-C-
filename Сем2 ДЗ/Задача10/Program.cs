@@ -5,9 +5,14 @@
 
 Console.Clear();
 
-Console.Write("Введите трехзначное число: ");
-int number = int.Parse(Console.ReadLine());
+Console.Write("Введите число: ");
+string number = Console.ReadLine();
 
-int secondDigit = number / 10 % 10;
-
-Console.Write($"{secondDigit}");
+if((number.Length > 2) && (number.Length < 4))
+{
+    Console.Write($"{number[1]}");
+}
+else
+{
+    Console.WriteLine("Число не является трехзначным");
+}
