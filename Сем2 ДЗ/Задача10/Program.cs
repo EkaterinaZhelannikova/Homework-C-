@@ -8,7 +8,7 @@ Console.Clear();
 Console.Write("Введите число: ");
 string number = Console.ReadLine();
 
-if((number.Length > 2) && (number.Length < 4))
+if(number.Length == 3)
 {
     Console.Write($"{number[1]}");
 }
