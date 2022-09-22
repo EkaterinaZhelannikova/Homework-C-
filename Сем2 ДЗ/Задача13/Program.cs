@@ -6,12 +6,11 @@
 Console.Clear();
 
 Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
-string digit = Convert.ToString(number);
+string number = Console.ReadLine();
 
-if(digit.Length > 2)
+if(number.Length > 2)
 {
-    Console.Write($"{digit[2]}");
+    Console.Write($"{number[2]}");
 }
 else
 {
