@@ -19,5 +19,5 @@ Console.Write("Введите координату Z для B: ");
 int zb = int.Parse(Console.ReadLine()!);
 
 
-double d = Math.Sqrt(Math.Pow(xa - xb, 2) + Math.Pow(ya - yb, 2) + Math.Pow(za - zb, 2));
+double d = Math.Sqrt (Math.Pow(xa - xb, 2) + Math.Pow(ya - yb, 2) + Math.Pow(za - zb, 2));
 Console.Write($"расстояние между точками = {d:f2}");
