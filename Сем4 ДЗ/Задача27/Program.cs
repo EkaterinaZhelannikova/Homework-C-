@@ -17,14 +17,22 @@ int Sum (int number)
 {
     int lenght = Convert.ToString(number).Length;
     int sum = 0;
-    for (int i = 0; i < lenght; i++)
+    if (number < 0)
     {
-        sum = sum + number % 10;
-        number = number / 10;
+        number = -number;
+        for (int i = 0; i < lenght - 1; i++)
+        {
+            sum = sum + number % 10;
+            number = number / 10;
+        }
     }
-    if (sum < 0)
+    else
     {
-        sum = -sum;
+        for (int i = 0; i < lenght; i++)
+        {
+            sum = sum + number % 10;
+            number = number / 10;
+        }
     }
     return sum;
 }
