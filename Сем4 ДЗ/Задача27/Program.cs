@@ -10,11 +10,14 @@ Console.Clear();
 
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
+int sum = Sum(number);
+Console.Write($"Сумма цифр в числе равна {sum}");
 
 int Sum (int number)
 {
+    int lenght = Convert.ToString(number).Length;
     int sum = 0;
-    while (number > 0)
+    for (int i = 0; i < lenght; i++)
     {
         sum = sum + number % 10;
         number = number / 10;
