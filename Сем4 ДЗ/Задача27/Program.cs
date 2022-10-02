@@ -22,5 +22,9 @@ int Sum (int number)
         sum = sum + number % 10;
         number = number / 10;
     }
+    if (sum < 0)
+    {
+        sum = -sum;
+    }
     return sum;
 }
