@@ -15,24 +15,12 @@ Console.Write($"Сумма цифр в числе равна {sum}");
 
 int Sum (int number)
 {
-    int lenght = Convert.ToString(number).Length;
+    int length = Convert.ToString(number).Length;
     int sum = 0;
-    if (number < 0)
+    for (int i = 0; i < length; i++)
     {
-        number = -number;
-        for (int i = 0; i < lenght - 1; i++)
-        {
-            sum = sum + number % 10;
-            number = number / 10;
-        }
-    }
-    else
-    {
-        for (int i = 0; i < lenght; i++)
-        {
-            sum = sum + number % 10;
-            number = number / 10;
-        }
+        sum = sum + number % 10;
+        number = number / 10;
     }
     return sum;
 }
