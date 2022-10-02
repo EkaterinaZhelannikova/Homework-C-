@@ -13,10 +13,10 @@ int numberA = int.Parse(Console.ReadLine()!);
 Console.Write("Введите число B: ");
 int numberB = int.Parse(Console.ReadLine()!);
 
-int exponentiation = Exponentiation(numberA, numberB);
-Console.Write($"{exponentiation}");
+int pow = Power(numberA, numberB);
+Console.Write($"{pow}");
 
-int Exponentiation(int numberA, int numberB)
+int Power(int numberA, int numberB)
 {
     int result = 1;
     for (int i = 0; i < numberB; i++)
