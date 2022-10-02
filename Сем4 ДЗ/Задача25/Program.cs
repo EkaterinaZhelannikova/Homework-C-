@@ -7,3 +7,21 @@
 //- Внутри функций НЕЛЬЗЯ использовать класс Console. Только в основном блоке кода
 
 Console.Clear();
+
+Console.Write("Введите число А: ");
+int numberA = int.Parse(Console.ReadLine()!);
+Console.Write("Введите число B: ");
+int numberB = int.Parse(Console.ReadLine()!);
+
+int exponentiation = Exponentiation(numberA, numberB);
+Console.Write($"{exponentiation}");
+
+int Exponentiation(int numberA, int numberB)
+{
+    int result = 1;
+    for (int i = 0; i < numberB; i++)
+    {
+        result = result * numberA;
+    }
+    return result;
+}
