@@ -17,7 +17,7 @@ void FillArray(int[] array)
     Random rand = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rand.Next(1, 100);
+        array[i] = rand.Next();
     }
 }
 
