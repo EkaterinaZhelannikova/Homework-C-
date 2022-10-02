@@ -7,28 +7,29 @@
 
 Console.Clear();
 
-int[] array = new int[8];
-FillArray(array);
+int length = 8;
+int[] array = CreateArray(length);
 PrintArray(array);
 
 
-void FillArray(int[] array)
+int[] CreateArray (int length)
 {
+    array = new int[length];
     Random rand = new Random();
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = rand.Next();
     }
+    return array;
 }
 
 void PrintArray (int[] array)
 {
-    int count = array.Length;
     Console.Write("[");
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i < length; i++)
     {
         Console.Write(array[i]);
-        if (i == count - 1)
+        if (i == length - 1)
         {
             Console.Write("]");
         }
