@@ -3,25 +3,23 @@
 
 Console.Clear();
 
-Random rand = new Random();
-int length = rand.Next(5, 7);
-int[] array = CreateArray(length);
-int dif = DiffMaxMin(array);
+double[] array = CreateArray(7);
+double dif = DiffMaxMin(array);
 PrintArray(array);
 Console.WriteLine($"Разница между max и min элементов массива равна {dif}");
 
-int[] CreateArray (int length)
+double[] CreateArray (int length)
 {
-    int[] array = new int[length];
+    double[] array = new double[length];
     Random rand = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rand.Next(-50, 50);
+        array[i] = rand.Next(-50, 50) + Math.Round(rand.NextDouble(), 2);
     }
     return array;
 }
 
-void PrintArray (int[] array)
+void PrintArray (double[] array)
 {
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
@@ -39,10 +37,10 @@ void PrintArray (int[] array)
     Console.WriteLine();
 }
 
-int DiffMaxMin (int[] array)
+double DiffMaxMin (double[] array)
 {
-    int max = array[0];
-    int min = array[0];
+    double max = array[0];
+    double min = array[0];
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > max)
@@ -50,10 +48,6 @@ int DiffMaxMin (int[] array)
         else if (array[i] < min)
             min = array[i];
     }
-    int dif = 0;
-    if (min < 0)
-        dif = max + min;
-    else 
-        dif = max - min;
+    dif = max - min;
     return dif;
 }
