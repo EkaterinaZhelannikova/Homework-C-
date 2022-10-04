@@ -8,9 +8,9 @@ Console.Clear();
 Random rand = new Random();
 int length = rand.Next(5, 10);
 int[] array = CreateArray(length);
-int sum = SumUneven(array);
+int sumUneven = SumUneven(array);
 PrintArray(array);
-Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях равна {sum}");
+Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях равна {sumUneven}");
 
 int[] CreateArray (int length)
 {
