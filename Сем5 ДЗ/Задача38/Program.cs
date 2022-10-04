@@ -4,9 +4,9 @@
 Console.Clear();
 
 double[] array = CreateArray(7);
-double diffMaxMin = DiffMaxMin(array);
+double dif = DiffMaxMin(array);
 PrintArray(array);
-Console.WriteLine($"Разница между max и min элементов массива равна {diffMaxMin}");
+Console.WriteLine($"Разница между max и min элементов массива равна {dif}");
 
 double[] CreateArray (int length)
 {
