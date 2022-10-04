@@ -6,7 +6,7 @@
 Console.Clear();
 
 Random rand = new Random();
-int length = rand.Next(5, 7);
+int length = rand.Next(5, 10);
 int[] array = CreateArray(length);
 int sum = SumUneven(array);
 PrintArray(array);
@@ -15,7 +15,6 @@ Console.WriteLine($"Сумма элементов, стоящих на нече�
 int[] CreateArray (int length)
 {
     int[] array = new int[length];
-    Random rand = new Random();
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = rand.Next(-50, 50);
@@ -44,10 +43,9 @@ void PrintArray (int[] array)
 int SumUneven (int[] array)
 {
     int sum = 0;
-    for (int i = 1; i < array.Length; i++)
+    for (int i = 1; i < array.Length; i+=2)
     {
-        sum = sum + array[i];
-        i++;
+        sum += array[i];
     }
     return sum;
 }
