@@ -5,7 +5,7 @@
 Console.Clear();
 
 Random rand = new Random();
-int length = rand.Next(2, 5);
+int length = rand.Next(5, 10);
 int[] array = CreateArray(length);
 int count = Even(array);
 PrintArray(array);
@@ -14,7 +14,6 @@ Console.WriteLine($"Количество четных элементов в ма
 int[] CreateArray (int length)
 {
     int[] array = new int[length];
-    Random rand = new Random();
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = rand.Next(100, 1000);
