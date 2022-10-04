@@ -6,8 +6,7 @@
 Console.Clear();
 
 Random rand = new Random();
-int length = rand.Next(5, 10
-);
+int length = rand.Next(5, 10);
 int[] array = CreateArray(length);
 int sum = SumUneven(array);
 PrintArray(array);
