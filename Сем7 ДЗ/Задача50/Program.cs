@@ -12,14 +12,14 @@ int[,] array = new int[4, 4];
 FillArray(array);
 PrintArray(array);
 
-Console.Write("Введите позицию элемента массива: ");
-Console.WriteLine();
-int i = int.Parse(Console.ReadLine()!);
-int j = int.Parse(Console.ReadLine()!);
+Console.Write("Введите индекс строки: ");
+int row = int.Parse(Console.ReadLine()!);
+Console.Write("Введите индекс столбца: ");
+int column = int.Parse(Console.ReadLine()!);
 
-if (i < array.GetLength(0) && j < array.GetLength(1))
+if (row < array.GetLength(0) && column < array.GetLength(1))
 {
-    Console.WriteLine($"Значение это элемента: {array[i,j]}");
+    Console.WriteLine($"Значение это элемента: {array[row, column]}");
 }
 else
 {
