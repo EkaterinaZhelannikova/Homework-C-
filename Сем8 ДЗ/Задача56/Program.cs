@@ -16,29 +16,29 @@ int[,] array = new int[row, column];
 FillArray(array);
 PrintArray(array);
 
-int minSumRow = 0;
-int sumRow = SumRow(array, 0);
+int indexRow = 1;
+int minSumRow = SumRow(array, 0);
+
 for (int i = 1; i < array.GetLength(0); i++)
 {
     int tempSumRow = SumRow(array, i);
-    if (sumRow > tempSumRow)
+    if (minSumRow > tempSumRow)
     {
-        sumRow = tempSumRow;
-        minSumRow = i;
+        minSumRow = tempSumRow;
+        indexRow++;
     }
 }
 
-Console.WriteLine($"{minSumRow+1} строкa с наименьшей суммой элементов ({sumRow})");
-
+Console.WriteLine($"{indexRow} строкa с наименьшей суммой элементов ({minSumRow})");
 
 int SumRow(int[,] array, int i)
 {
-  int sumRow = 0;
-  for (int j = 1; j < array.GetLength(1); j++)
-  {
-    sumRow += array[i,j];
-  }
-  return sumRow;
+    int sumRow = 0;
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+        sumRow += array[i,j];
+    }
+    return sumRow;
 }
 
 void FillArray(int[,] array)
