@@ -8,7 +8,7 @@ Console.Write("Введите число m: ");
 int m = int.Parse(Console.ReadLine()!);
 Console.Write("Введите число n: ");
 int n = int.Parse(Console.ReadLine()!);
-Console.Write($"m = {m}, n = {n} -> A(m, n) = {A(m, n)}");
+Console.Write($"A({m}, {n}) = {A(m, n)}");
             
 int A(int m, int n)
 {
